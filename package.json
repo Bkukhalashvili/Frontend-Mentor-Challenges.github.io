@@ -1,0 +1,19 @@
+{
+  "name": "frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "frontend mentor challenges",
+  "main": "index.html",
+  "scripts": {
+    "_comment": "Instead of this script I'm using Live Sass Compiler extension",
+    "compile:sass": "node-sass style.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bkukhalashvili/Frontend-Mentor-Challenges"
+  },
+  "author": "Bacho Kukhalashvili",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
