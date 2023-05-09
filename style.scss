@@ -1,0 +1,125 @@
+.header {
+  // display: inline-block;
+  max-width: 32.5rem;
+
+  &__logo-box {
+    margin-bottom: 2rem;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+}
+
+// .heading-primary {
+//   text-transform: uppercase;
+//   margin-bottom: 2rem;
+//   &--main {
+//     display: block;
+//   }
+
+//   &--sub {
+//     display: block;
+//   }
+// }
+
+.heading-paragraph {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  &--main {
+    display: block;
+  }
+
+  &--sub {
+    display: block;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 0.3rem;
+    }
+    // text-align: center;
+    // align-items: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      position: relative;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      // color: black;
+    }
+
+    &:hover,
+    &:active {
+      color: crimson;
+      // border: 1px solid black;
+      // // box-shadow: 5px 5px black;
+
+      &::before {
+        content: "";
+        position: absolute;
+        // border: 1px solid black;
+        height: 19px;
+        width: calc(100% + 0.8rem);
+        // color: black;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid black;
+      }
+    }
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   // border: 1px solid black;
+    //   height: 19px;
+    //   width: calc(100% + 0.8rem);
+    //   // color: black;
+    //   background-color: transparent;
+    //   border-radius: 100px;
+    //   border: 1px solid black;
+    // }
+
+    &--num {
+      padding-left: 0.8rem;
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      // align-items: center;
+    }
+
+    &--title {
+      display: inline-block;
+    }
+  }
+}
+
+// .active {
+//   color: crimson;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     // border: 1px solid black;
+//     height: 19px;
+//     width: calc(100% + 0.8rem);
+//     // color: black;
+//     background-color: transparent;
+//     border-radius: 100px;
+//     border: 1px solid black;
+//   }
+// }

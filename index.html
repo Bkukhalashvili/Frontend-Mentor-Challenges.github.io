@@ -5,20 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Frontend Mentor Challenges" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base.css" />
+
     <title>Frontend Mentor Challenges</title>
   </head>
   <body>
-    <nav>
-      <a href="/">All</a>
-      <a href="#newbie">Newbie</a>
-      <a href="#junior">Junior</a>
-      <a href="#intermediate">Intermediate</a>
-      <a href="#advanced">Advanced</a>
-      <a href="#guru">Guru</a>
-    </nav>
-    <div>
-      <div class="content"></div>
-    </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="#">
+          <img src="/img/logo-desktop.svg" alt="Logo" class="header__logo" />
+        </a>
+      </div>
+
+      <div class="header__text-box">
+        <!-- <h1 class="heading-primary">
+          <span class="heading-primary--main">Frontend Mentor</span>
+          <span class="heading-primary--sub">Challenges</span>
+        </h1> -->
+
+        <p class="heading-paragraph">
+          <span class="heading-paragraph--main">Frontend Mentor solutions</span>
+          <span class="heading-paragraph--sub">
+            made by Bacho Kukhalashvili
+          </span>
+        </p>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/" class="navigation__link">
+              <span class="navigation__link--num">0</span>
+              <span class="navigation__link--title">All</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#newbie" class="navigation__link">
+              <span class="navigation__link--num">1</span>
+              <span class="navigation__link--title">Newbie</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#junior" class="navigation__link">
+              <span class="navigation__link--num">2</span>
+              <span class="navigation__link--title">Junior</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#intermediate" class="navigation__link">
+              <span class="navigation__link--num">3</span>
+              <span class="navigation__link--title">Intermediate</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#advanced" class="navigation__link">
+              <span class="navigation__link--num">4</span>
+              <span class="navigation__link--title">Advanced</span>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a href="#guru" class="navigation__link">
+              <span class="navigation__link--num">5</span>
+              <span class="navigation__link--title">Guru</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section-content">
+        <div class="content">
+          <!--  -->
+        </div>
+      </section>
+    </main>
+
     <script src="/js/router.js"></script>
   </body>
 </html>

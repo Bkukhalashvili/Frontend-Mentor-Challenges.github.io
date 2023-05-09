@@ -37,6 +37,8 @@ const routes = {
   },
 };
 
+// let reminder;
+
 // watches the url
 const locationHandler = async () => {
   // gets the url path and replaces hash with empty string e.g (#junior to junior)
@@ -44,7 +46,23 @@ const locationHandler = async () => {
   // if the path length is 0, sets it to primary page route
   if (location.length == 0) {
     location = "/";
+
+    // document.querySelector(`[href="/"]`).classList.add("active");
   }
+
+  // console.log(reminder);
+  // console.log(location);
+
+  // if (reminder) {
+  //   document.querySelector(`[href="#${reminder}"]`).classList.remove("active");
+  //   document.querySelector(`[href="/"]`).classList.remove("active");
+  // } else {
+  //   document.querySelector(`[href="#${location}"]`).classList.remove("active");
+  //   // document.querySelector(`[href="/"]`).classList.remove("active");
+  // }
+
+  // reminder = location;
+  // console.log(reminder);
 
   // gets the route object from the routes object
   const route = routes[location] || routes["404"];
@@ -59,6 +77,14 @@ const locationHandler = async () => {
   document
     .querySelector('meta[name="description"]')
     .setAttribute("content", route.description);
+  // console.log(
+  //   document.querySelector(`[href="#${location}"]`).classList.add("active")
+  // );
+  // if (location != "/") {
+  //   document.querySelector(`[href="#${location}"]`).classList.add("active");
+  // }
+
+  // console.log(reminder);
 };
 
 //watches the hash and calls the locationHandler function
