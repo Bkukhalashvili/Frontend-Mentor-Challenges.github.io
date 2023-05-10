@@ -58,3 +58,16 @@
 .navigation__link--title {
   display: inline-block;
 }
+
+.active {
+  color: crimson;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: calc(100% + 0.8rem);
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid black;
+}

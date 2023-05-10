@@ -108,18 +108,18 @@
   }
 }
 
-// .active {
-//   color: crimson;
+.active {
+  color: crimson;
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     // border: 1px solid black;
-//     height: 19px;
-//     width: calc(100% + 0.8rem);
-//     // color: black;
-//     background-color: transparent;
-//     border-radius: 100px;
-//     border: 1px solid black;
-//   }
-// }
+  &::before {
+    content: "";
+    position: absolute;
+    // border: 1px solid black;
+    height: 19px;
+    width: calc(100% + 0.8rem);
+    // color: black;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid black;
+  }
+}
