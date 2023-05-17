@@ -1,6 +1,10 @@
 .header {
   // display: inline-block;
   max-width: 32.5rem;
+  min-width: 23.1rem;
+  align-self: start;
+  position: sticky;
+  top: 3.4rem;
 
   &__logo-box {
     margin-bottom: 2rem;
