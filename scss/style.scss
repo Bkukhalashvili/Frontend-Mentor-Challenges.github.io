@@ -64,12 +64,12 @@
       align-items: center;
       text-align: center;
       text-decoration: none;
-      // color: black;
+      color: inherit;
     }
 
     &:hover,
     &:active {
-      color: crimson;
+      // color: crimson;
       // border: 1px solid black;
       // // box-shadow: 5px 5px black;
 
@@ -82,7 +82,7 @@
         // color: black;
         background-color: transparent;
         border-radius: 100px;
-        border: 1px solid black;
+        border: 1px solid #cac5bb;
       }
     }
 
@@ -124,6 +124,6 @@
     // color: black;
     background-color: transparent;
     border-radius: 100px;
-    border: 1px solid black;
+    border: 1px solid #cac5bb;
   }
 }
