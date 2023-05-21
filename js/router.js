@@ -43,14 +43,16 @@ let activePage;
 const locationHandler = async () => {
   // gets the url path and replaces hash with empty string e.g (#junior to junior)
   let location = window.location.hash.replace("#", "");
+  console.log(location);
   // if the path length is 0, sets it to primary page route
   if (location.length == 0) {
     location = "/";
+    console.log(location);
 
     // adds style to navigation depending on which page route is active
-    document.querySelector(`[href="/"]`).classList.add("active");
+    document.querySelectorAll(`[href="/"]`)[1].classList.add("active");
   } else {
-    document.querySelector(`[href="/"]`).classList.remove("active");
+    document.querySelectorAll(`[href="/"]`)[1].classList.remove("active");
     document.querySelector(`[href="#${location}"]`).classList.add("active");
 
     if (typeof activePage != "undefined" && activePage != "/") {
