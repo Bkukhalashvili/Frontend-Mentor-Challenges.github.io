@@ -73,3 +73,107 @@
   border-radius: 100px;
   border: 1px solid #cac5bb;
 }
+
+/**************************/
+/* CARDS SECTION */
+/**************************/
+.main {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem;
+  align-items: center;
+  padding: 3rem 3.2rem;
+  margin: 0 auto;
+}
+
+.card {
+  width: 35rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgb(24, 24, 24);
+  transition: all 0.2s;
+}
+.card__link, .card__link:link, .card__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.card:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.card__image {
+  width: 100%;
+}
+.card__info {
+  padding: 2rem 2rem;
+}
+.card__info__title {
+  display: flex;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  min-height: 5.12rem;
+  align-items: center;
+}
+.card__info__difficulty {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.8px;
+}
+.card__info__difficulty__icon {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+.card__info__difficulty__icon--html {
+  color: #de4013;
+}
+.card__info__difficulty__icon--css {
+  color: #0774b9;
+}
+.card__info__difficulty__icon--js {
+  color: #f07f21;
+}
+.card__info__difficulty__level {
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  margin-left: auto;
+  border: 1px solid #cac5bb;
+  border-radius: 5px;
+  position: relative;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.card__info__difficulty__level--num {
+  border: 1px solid #6abecd;
+  background-color: #6abecd;
+  font-weight: 700;
+  color: white;
+  padding: 0 0.75rem;
+}
+.card__info__difficulty__level--title {
+  padding: 0 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6abecd;
+}
+.card__info__description {
+  display: flex;
+  align-items: center;
+  min-height: 7.36rem;
+}

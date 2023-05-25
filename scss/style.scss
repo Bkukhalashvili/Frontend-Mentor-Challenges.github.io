@@ -127,3 +127,132 @@
     border: 1px solid #cac5bb;
   }
 }
+
+/**************************/
+/* CARDS SECTION */
+/**************************/
+.main {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  // width: auto;
+  width: fit-content;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-items: center;
+  padding: 3rem 3.2rem;
+  margin: 0 auto;
+}
+
+.card {
+  width: 35rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(24, 24, 24);
+
+  transition: all 0.2s;
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    // &:hover,
+    // &:active {
+    // }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 2rem 2rem;
+
+    &__title {
+      display: flex;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      min-height: 5.12rem;
+      align-items: center;
+    }
+
+    &__difficulty {
+      display: flex;
+      align-items: center;
+      // padding-top: 1rem;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.8px;
+
+      &__icon {
+        height: 2.3rem;
+        width: 2.3rem;
+
+        &--html {
+          color: #de4013;
+        }
+
+        &--css {
+          color: #0774b9;
+        }
+
+        &--js {
+          color: #f07f21;
+        }
+      }
+
+      &__level {
+        display: flex;
+        font-size: 1.4rem;
+        align-items: center;
+        margin-left: auto;
+        border: 1px solid #cac5bb;
+        border-radius: 5px;
+        position: relative;
+        line-height: 1.5;
+        overflow: hidden;
+
+        &--num {
+          border: 1px solid #6abecd;
+          background-color: #6abecd;
+
+          font-weight: 700;
+          color: white;
+          padding: 0 0.75rem;
+        }
+
+        &--title {
+          padding: 0 0.75rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: #6abecd;
+        }
+      }
+    }
+
+    &__description {
+      display: flex;
+      align-items: center;
+      min-height: 7.36rem;
+    }
+  }
+}
