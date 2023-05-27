@@ -83,3 +83,8 @@ const locationHandler = async () => {
 window.addEventListener("hashchange", locationHandler);
 // calls locationHandler to load the page
 locationHandler();
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
