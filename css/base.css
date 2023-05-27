@@ -11,12 +11,17 @@ html {
 }
 
 body {
-  display: flex;
-  gap: 4rem;
   font-family: sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: #1b191b;
   color: #cac5bb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
   padding: 3.4rem 3.2rem;
 }
