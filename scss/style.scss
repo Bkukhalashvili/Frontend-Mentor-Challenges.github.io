@@ -35,6 +35,7 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   font-size: 1.4rem;
+  letter-spacing: 0.8px;
   &--main {
     display: block;
   }
@@ -48,7 +49,8 @@
   &__list {
     list-style: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    // font-size: 1.4rem;
+    letter-spacing: 0.5px;
   }
 
   &__item {
