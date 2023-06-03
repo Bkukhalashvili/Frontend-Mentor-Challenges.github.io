@@ -6,7 +6,6 @@
   align-self: start;
   position: sticky;
   top: 3.4rem;
-  position: relative;
 }
 @media only screen and (max-width: 62.5em) {
   .header {
