@@ -89,10 +89,9 @@ const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-// btn
-let button = document.querySelector(".header__btn-mobile");
+//mobile nav button (unhide & hide navigation)
+const navButtonEl = document.querySelector(".header__btn-mobile");
 
-button.addEventListener("click", function () {
-  // document.querySelector(".navigation").classList.toggle("test");
+navButtonEl.addEventListener("click", function () {
   document.querySelector(".navigation").classList.toggle("navigation--hide");
 });
