@@ -88,3 +88,11 @@ locationHandler();
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+// btn
+let button = document.querySelector(".header__btn-mobile");
+
+button.addEventListener("click", function () {
+  // document.querySelector(".navigation").classList.toggle("test");
+  document.querySelector(".navigation").classList.toggle("navigation--hide");
+});

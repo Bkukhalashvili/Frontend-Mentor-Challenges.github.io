@@ -9,6 +9,21 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 91.31em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 82.18em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 73.12em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -25,4 +40,11 @@ body {
        column-gap: 4rem;
   height: 95vh;
   padding: 3.4rem 3.2rem 0;
+}
+@media only screen and (max-width: 62.5em) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
 }

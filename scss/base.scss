@@ -9,6 +9,18 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @media only screen and (max-width: 91.31em) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: 82.18em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 73.12em) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -26,4 +38,9 @@ body {
   height: 95vh;
 
   padding: 3.4rem 3.2rem 0;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
 }
