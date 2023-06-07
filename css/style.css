@@ -106,6 +106,16 @@
     font-size: 1.8rem;
   }
 }
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .navigation__text-box__paragraph {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .navigation__text-box__paragraph {
+    font-size: 2.2rem;
+  }
+}
 .navigation__list {
   list-style: none;
   text-transform: uppercase;
@@ -139,8 +149,28 @@
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .navigation__link--num {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .navigation__link--num {
+    font-size: 1.6rem;
+  }
+}
 .navigation__link--title {
   display: inline-block;
+}
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .navigation__link--title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .navigation__link--title {
+    font-size: 2.2rem;
+  }
 }
 @media only screen and (max-width: 62.5em) {
   .navigation {
@@ -179,6 +209,16 @@
   padding: 3rem 3.2rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 48em), only screen and (hover: none) {
+  .section-cards {
+    padding: 1.5rem 1.6rem;
+  }
+}
+@media only screen and (max-width: 26.8em), only screen and (hover: none) {
+  .section-cards {
+    padding: 0;
+  }
+}
 
 .cards {
   display: grid;
@@ -189,6 +229,16 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .cards {
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -226,10 +276,19 @@
   min-height: 5.12rem;
   align-items: center;
 }
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .card__info__title {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card__info__title {
+    font-size: 2.5rem;
+  }
+}
 .card__info__difficulty {
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   letter-spacing: 0.8px;
 }
@@ -245,6 +304,12 @@
 }
 .card__info__difficulty__icon--js {
   color: #f07f21;
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card__info__difficulty__icon {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 .card__info__difficulty__level {
   display: flex;
@@ -270,10 +335,35 @@
   font-weight: 700;
   color: #6abecd;
 }
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card__info__difficulty__level {
+    font-size: 1.6rem;
+  }
+}
 .card__info__description {
   display: flex;
   align-items: center;
   min-height: 7.36rem;
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card__info__description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card__info {
+    padding: 1.6rem 1.4rem;
+  }
+}
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  .card {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .card {
+    width: 38rem;
+  }
 }
 
 /**************************/
@@ -291,5 +381,10 @@
 @media only screen and (max-width: 62.5em) {
   .footer {
     grid-column: 1;
+  }
+}
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  .footer {
+    font-size: 1.6rem;
   }
 }

@@ -120,6 +120,16 @@
       @media only screen and (max-width: 62.5em) {
         font-size: 1.8rem;
       }
+
+      @media only screen and (max-width: 44.3em),
+        only screen and (hover: none) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 23.75em),
+        only screen and (hover: none) {
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -173,10 +183,30 @@
       font-size: 1.2rem;
       margin-right: 0.5rem;
       // align-items: center;
+
+      @media only screen and (max-width: 44.3em),
+        only screen and (hover: none) {
+        font-size: 1.4rem;
+      }
+
+      @media only screen and (max-width: 23.75em),
+        only screen and (hover: none) {
+        font-size: 1.6rem;
+      }
     }
 
     &--title {
       display: inline-block;
+
+      @media only screen and (max-width: 44.3em),
+        only screen and (hover: none) {
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: 23.75em),
+        only screen and (hover: none) {
+        font-size: 2.2rem;
+      }
     }
   }
 
@@ -219,6 +249,14 @@
   padding: 3rem 3.2rem;
 
   margin: 0 auto;
+
+  @media only screen and (max-width: 48em), only screen and (hover: none) {
+    padding: 1.5rem 1.6rem;
+  }
+
+  @media only screen and (max-width: 26.8em), only screen and (hover: none) {
+    padding: 0;
+  }
 }
 
 .cards {
@@ -226,14 +264,17 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
-  @media only screen and (max-width: 91.31em) {
-    // grid-template-columns: repeat(2, 1fr);
-    // gap: 4rem;
-  }
-
   @media only screen and (max-width: 73.12em) {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 44.3em), only screen and (hover: none) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -283,13 +324,23 @@
       margin-bottom: 1.5rem;
       min-height: 5.12rem;
       align-items: center;
+
+      @media only screen and (max-width: 44.3em),
+        only screen and (hover: none) {
+        font-size: 2.4rem;
+      }
+
+      @media only screen and (max-width: 23.75em),
+        only screen and (hover: none) {
+        font-size: 2.5rem;
+      }
     }
 
     &__difficulty {
       display: flex;
       align-items: center;
       // padding-top: 1rem;
-      font-size: 1.6rem;
+      // font-size: 1.6rem;
       margin-bottom: 1.5rem;
       letter-spacing: 0.8px;
 
@@ -307,6 +358,12 @@
 
         &--js {
           color: #f07f21;
+        }
+
+        @media only screen and (max-width: 23.75em),
+          only screen and (hover: none) {
+          height: 3rem;
+          width: 3rem;
         }
       }
 
@@ -336,6 +393,11 @@
           font-weight: 700;
           color: #6abecd;
         }
+
+        @media only screen and (max-width: 23.75em),
+          only screen and (hover: none) {
+          font-size: 1.6rem;
+        }
       }
     }
 
@@ -343,7 +405,23 @@
       display: flex;
       align-items: center;
       min-height: 7.36rem;
+
+      @media only screen and (max-width: 23.75em),
+        only screen and (hover: none) {
+        font-size: 2rem;
+      }
     }
+
+    @media only screen and (max-width: 23.75em), only screen and (hover: none) {
+      padding: 1.6rem 1.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 44.3em), only screen and (hover: none) {
+    width: 40rem;
+  }
+  @media only screen and (max-width: 23.75em), only screen and (hover: none) {
+    width: 38rem;
   }
 }
 
@@ -366,5 +444,9 @@
     // column-gap: 0;
 
     grid-column: 1;
+  }
+
+  @media only screen and (max-width: 23.75em), only screen and (hover: none) {
+    font-size: 1.6rem;
   }
 }

@@ -24,6 +24,11 @@ html {
     font-size: 56.25%;
   }
 }
+@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -31,6 +36,11 @@ body {
   font-weight: 400;
   background-color: #1b191b;
   color: #cac5bb;
+}
+@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  body {
+    font-size: 1.8rem;
+  }
 }
 
 .container {
@@ -44,7 +54,18 @@ body {
 @media only screen and (max-width: 62.5em) {
   .container {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto 1fr;
     -moz-column-gap: 0;
          column-gap: 0;
+  }
+}
+@media only screen and (max-width: 73.12em) {
+  .container {
+    padding: 1.7rem 1.6rem 0;
+  }
+}
+@media only screen and (max-width: 26.8em), only screen and (hover: none) {
+  .container {
+    padding: 1rem 0.9rem 0;
   }
 }
