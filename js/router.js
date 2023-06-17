@@ -93,5 +93,8 @@ yearEl.textContent = currentYear;
 const navButtonEl = document.querySelector(".header__btn-mobile");
 
 navButtonEl.addEventListener("click", function () {
-  document.querySelector(".navigation").classList.toggle("navigation--hide");
+  document.querySelector(".navigation").classList.toggle("navigation--show");
+  document
+    .querySelector(".header__btn-mobile")
+    .classList.toggle("header__btn-mobile--active");
 });
