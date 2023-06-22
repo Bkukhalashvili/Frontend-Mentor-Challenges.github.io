@@ -24,7 +24,7 @@ html {
     font-size: 56.25%;
   }
 }
-@media only screen and (max-width: 23.75em), only screen and (hover: none) {
+@media only screen and (max-width: 23.75em) {
   html {
     font-size: 50%;
   }
@@ -37,7 +37,7 @@ body {
   background-color: #1b191b;
   color: #cac5bb;
 }
-@media only screen and (max-width: 44.3em), only screen and (hover: none) {
+@media only screen and (max-width: 44.3em) {
   body {
     font-size: 1.8rem;
   }
@@ -64,7 +64,7 @@ body {
     padding: 1.7rem 1.6rem 0;
   }
 }
-@media only screen and (max-width: 26.8em), only screen and (hover: none) {
+@media only screen and (max-width: 26.8em) {
   .container {
     padding: 1rem 0.9rem 0;
   }

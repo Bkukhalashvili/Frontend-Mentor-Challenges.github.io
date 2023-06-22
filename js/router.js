@@ -97,4 +97,6 @@ navButtonEl.addEventListener("click", function () {
   document
     .querySelector(".header__btn-mobile")
     .classList.toggle("header__btn-mobile--active");
+  document.querySelector(".content").classList.toggle("content--slide-down");
+  document.querySelector(".footer").classList.toggle("footer--slide-down");
 });
