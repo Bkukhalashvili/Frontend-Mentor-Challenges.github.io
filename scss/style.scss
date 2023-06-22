@@ -85,7 +85,7 @@
           content: "";
           position: absolute;
           left: 0;
-          transition: all 0.2s;
+          transition: all 0.3s;
         }
 
         &::before {
@@ -100,11 +100,11 @@
     &--active {
       .header__btn-mobile__icon::before {
         top: 0;
-        transform: rotate(135deg);
+        transform: rotate(-45deg);
       }
       .header__btn-mobile__icon::after {
         top: 0;
-        transform: rotate(-135deg);
+        transform: rotate(45deg);
       }
       .header__btn-mobile__icon {
         background-color: transparent;
@@ -114,6 +114,8 @@
 }
 
 .navigation {
+  // transition: all 1s ease-out;
+
   &__text-box {
     margin-bottom: 2rem;
 
@@ -134,13 +136,10 @@
         font-size: 1.8rem;
       }
 
-      @media only screen and (max-width: 44.3em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 44.3em) {
         font-size: 2rem;
       }
-
-      @media only screen and (max-width: 23.75em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 26.8em) {
         font-size: 2.2rem;
       }
     }
@@ -203,28 +202,27 @@
       margin-right: 0.5rem;
       // align-items: center;
 
-      @media only screen and (max-width: 44.3em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 44.3em) {
         font-size: 1.4rem;
       }
 
-      @media only screen and (max-width: 23.75em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 26.8em) {
         font-size: 1.6rem;
       }
+
+      // @media only screen and (max-width: 23.75em) {
+      //   font-size: 1.6rem;
+      // }
     }
 
     &--title {
       display: inline-block;
 
-      @media only screen and (max-width: 44.3em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 44.3em) {
         font-size: 1.8rem;
       }
-
-      @media only screen and (max-width: 23.75em),
-        only screen and (hover: none) {
-        font-size: 2.2rem;
+      @media only screen and (max-width: 26.8em) {
+        font-size: 2rem;
       }
     }
   }
@@ -232,22 +230,25 @@
   @media only screen and (max-width: 62.5em) {
     margin-bottom: 2.7rem;
     font-size: 1.8rem;
-  }
 
-  @media only screen and (max-width: 62.5em) {
     position: absolute;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translateX(-1000px);
+
+    transition: all 0.3s ease-in;
   }
 
   &--show {
-    position: relative;
+    // position: relative;
     opacity: 1;
-    pointer-events: all;
+    pointer-events: auto;
     visibility: visible;
+    transform: translateX(0px);
 
-    transition: all 0.5s;
+    // transform: translateY(47.52rem);
+    // transition: all 0.8s;
   }
 }
 
@@ -268,6 +269,34 @@
   }
 }
 
+.content {
+  transition: all 0.3s ease-in;
+
+  // &--show {
+  //   transform: translateY(21.68rem);
+  // }
+
+  @media only screen and (max-width: 62.5em) {
+    // grid-template-columns: repeat(1, 1fr);
+    // column-gap: 0;
+    &--slide-down {
+      transform: translateY(203.1px);
+    }
+    // grid-column: 1;
+  }
+
+  @media only screen and (max-width: 26.8em) {
+    &--slide-down {
+      transform: translateY(227.1px);
+    }
+  }
+  @media only screen and (max-width: 23.75em) {
+    &--slide-down {
+      transform: translateY(202.4px);
+    }
+  }
+}
+
 /**************************/
 /* CARDS SECTION */
 /**************************/
@@ -277,12 +306,12 @@
 
   margin: 0 auto;
 
-  @media only screen and (max-width: 48em), only screen and (hover: none) {
+  @media only screen and (max-width: 48em) {
     padding: 1.5rem 1.6rem;
   }
 
-  @media only screen and (max-width: 26.8em), only screen and (hover: none) {
-    padding: 0;
+  @media only screen and (max-width: 26.8em) {
+    padding: 1.5rem 0;
   }
 }
 
@@ -300,8 +329,9 @@
     gap: 2rem;
   }
 
-  @media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  @media only screen and (max-width: 44.3em) {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
 
@@ -352,13 +382,11 @@
       min-height: 5.12rem;
       align-items: center;
 
-      @media only screen and (max-width: 44.3em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 44.3em) {
         font-size: 2.4rem;
       }
 
-      @media only screen and (max-width: 23.75em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 23.75em) {
         font-size: 2.5rem;
       }
     }
@@ -387,8 +415,7 @@
           color: #f07f21;
         }
 
-        @media only screen and (max-width: 23.75em),
-          only screen and (hover: none) {
+        @media only screen and (max-width: 23.75em) {
           height: 3rem;
           width: 3rem;
         }
@@ -421,8 +448,7 @@
           color: #6abecd;
         }
 
-        @media only screen and (max-width: 23.75em),
-          only screen and (hover: none) {
+        @media only screen and (max-width: 23.75em) {
           font-size: 1.6rem;
         }
       }
@@ -433,21 +459,20 @@
       align-items: center;
       min-height: 7.36rem;
 
-      @media only screen and (max-width: 23.75em),
-        only screen and (hover: none) {
+      @media only screen and (max-width: 23.75em) {
         font-size: 2rem;
       }
     }
 
-    @media only screen and (max-width: 23.75em), only screen and (hover: none) {
+    @media only screen and (max-width: 23.75em) {
       padding: 1.6rem 1.4rem;
     }
   }
 
-  @media only screen and (max-width: 44.3em), only screen and (hover: none) {
+  @media only screen and (max-width: 44.3em) {
     width: 40rem;
   }
-  @media only screen and (max-width: 23.75em), only screen and (hover: none) {
+  @media only screen and (max-width: 23.75em) {
     width: 38rem;
   }
 }
@@ -466,14 +491,27 @@
 
   padding: 3.2rem 0 3.2rem;
 
+  transition: all 0.3s ease-in;
+
   @media only screen and (max-width: 62.5em) {
     // grid-template-columns: repeat(1, 1fr);
     // column-gap: 0;
 
     grid-column: 1;
+
+    &--slide-down {
+      transform: translateY(203.1px);
+    }
   }
 
-  @media only screen and (max-width: 23.75em), only screen and (hover: none) {
-    font-size: 1.6rem;
+  @media only screen and (max-width: 26.8em) {
+    &--slide-down {
+      transform: translateY(227.1px);
+    }
+  }
+  @media only screen and (max-width: 23.75em) {
+    &--slide-down {
+      transform: translateY(202.4px);
+    }
   }
 }
