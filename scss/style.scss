@@ -209,10 +209,6 @@
       @media only screen and (max-width: 26.8em) {
         font-size: 1.6rem;
       }
-
-      // @media only screen and (max-width: 23.75em) {
-      //   font-size: 1.6rem;
-      // }
     }
 
     &--title {
@@ -241,14 +237,10 @@
   }
 
   &--show {
-    // position: relative;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0px);
-
-    // transform: translateY(47.52rem);
-    // transition: all 0.8s;
   }
 }
 
@@ -269,20 +261,17 @@
   }
 }
 
+/**************************/
+/* CONTENT SECTION */
+/**************************/
+
 .content {
   transition: all 0.3s ease-in;
 
-  // &--show {
-  //   transform: translateY(21.68rem);
-  // }
-
   @media only screen and (max-width: 62.5em) {
-    // grid-template-columns: repeat(1, 1fr);
-    // column-gap: 0;
     &--slide-down {
       transform: translateY(203.1px);
     }
-    // grid-column: 1;
   }
 
   @media only screen and (max-width: 26.8em) {
