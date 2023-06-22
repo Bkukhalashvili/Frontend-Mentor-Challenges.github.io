@@ -221,6 +221,9 @@
   opacity: 1;
 }
 
+/**************************/
+/* CONTENT SECTION */
+/**************************/
 .content {
   transition: all 0.3s ease-in;
 }
