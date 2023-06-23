@@ -349,12 +349,24 @@
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    // disables hover effects on cards on touch screen
+    @media only screen and (max-width: 48em), only screen and (hover: none) {
+      transform: translateY(0px);
+      box-shadow: none;
+    }
   }
 
   &:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(black, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.8);
+
+    // disables hover effects on cards on touch screen
+    @media only screen and (max-width: 48em), only screen and (hover: none) {
+      transform: translateY(0px);
+      box-shadow: none;
+    }
   }
 
   &__image {
