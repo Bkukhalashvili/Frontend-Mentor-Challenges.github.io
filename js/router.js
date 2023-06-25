@@ -1,3 +1,6 @@
+import { info } from "./data.js";
+import { displayData } from "./dynHTML.js";
+
 // creates an object that maps the url to the template, title, and description
 const routes = {
   404: {
@@ -77,6 +80,8 @@ const locationHandler = async () => {
   document
     .querySelector('meta[name="description"]')
     .setAttribute("content", route.description);
+
+  displayData(info, location);
 };
 
 //watches the hash and calls the locationHandler function
