@@ -11,7 +11,7 @@ async function displayData(info, location) {
         icons += `
       <ion-icon
         name="logo-${obj.technology[i]}"
-        class="card__info__difficulty__icon card__info__difficulty__icon--html"
+        class="card__info__difficulty__icon card__info__difficulty__icon--${obj.technology[i]}"
         >
       </ion-icon>`;
       }
