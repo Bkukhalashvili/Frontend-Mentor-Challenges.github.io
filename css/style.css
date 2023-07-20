@@ -372,24 +372,40 @@
   font-size: 1.4rem;
   align-items: center;
   margin-left: auto;
-  border: 1px solid #cac5bb;
   border-radius: 5px;
   position: relative;
   line-height: 1.5;
   overflow: hidden;
 }
-.card__info__difficulty__level--num {
+.card__info__difficulty__level--newbie {
   border: 1px solid #6abecd;
-  background-color: #6abecd;
+}
+.card__info__difficulty__level--junior {
+  border: 1px solid #aad742;
+}
+.card__info__difficulty__level--num {
   font-weight: 700;
   color: white;
   padding: 0 0.75rem;
+}
+.card__info__difficulty__level--num--newbie {
+  border: 1px solid #6abecd;
+  background-color: #6abecd;
+}
+.card__info__difficulty__level--num--junior {
+  border: 1px solid #aad742;
+  background-color: #aad742;
 }
 .card__info__difficulty__level--title {
   padding: 0 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+.card__info__difficulty__level--title--newbie {
   color: #6abecd;
+}
+.card__info__difficulty__level--title--junior {
+  color: #aad742;
 }
 @media only screen and (max-width: 23.75em) {
   .card__info__difficulty__level {

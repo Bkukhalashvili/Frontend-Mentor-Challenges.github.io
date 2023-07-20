@@ -427,26 +427,52 @@
         font-size: 1.4rem;
         align-items: center;
         margin-left: auto;
-        border: 1px solid #cac5bb;
         border-radius: 5px;
         position: relative;
         line-height: 1.5;
         overflow: hidden;
 
-        &--num {
+        &--newbie {
           border: 1px solid #6abecd;
-          background-color: #6abecd;
+        }
+
+        &--junior {
+          border: 1px solid #aad742;
+        }
+
+        &--num {
+          // border: 1px solid #6abecd;
+          // background-color: #6abecd;
 
           font-weight: 700;
           color: white;
           padding: 0 0.75rem;
+
+          &--newbie {
+            border: 1px solid #6abecd;
+            background-color: #6abecd;
+          }
+
+          &--junior {
+            border: 1px solid #aad742;
+            background-color: #aad742;
+          }
         }
 
         &--title {
           padding: 0 0.75rem;
           text-transform: uppercase;
           font-weight: 700;
-          color: #6abecd;
+          // color: #6abecd;
+
+          &--newbie {
+            color: #6abecd;
+            // color: black;
+          }
+
+          &--junior {
+            color: #aad742;
+          }
         }
 
         @media only screen and (max-width: 23.75em) {

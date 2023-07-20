@@ -27,9 +27,9 @@ async function displayData(info, location) {
       </h2>
       <div class="card__info__difficulty">
       ${icons}
-        <p class="card__info__difficulty__level">
-          <span class="card__info__difficulty__level--num"> 01 </span>
-          <span class="card__info__difficulty__level--title">
+        <p class="card__info__difficulty__level card__info__difficulty__level--${obj.difficulty}">
+          <span class="card__info__difficulty__level--num card__info__difficulty__level--num--${obj.difficulty}"> 01 </span>
+          <span class="card__info__difficulty__level--title card__info__difficulty__level--title--${obj.difficulty}">
             ${obj.difficulty}
           </span>
         </p>
