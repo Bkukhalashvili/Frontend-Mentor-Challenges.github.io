@@ -333,6 +333,20 @@
 
   transition: all 0.2s;
 
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation-name: moveInRight;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+
   &__link {
     &,
     &:link,
