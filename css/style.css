@@ -243,6 +243,25 @@
   }
 }
 
+h1 {
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  60% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 /**************************/
 /* CARDS SECTION */
 /**************************/
@@ -293,11 +312,11 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgb(24, 24, 24);
   transition: all 0.2s;
-  animation-name: moveInRight;
-  animation-duration: 0.5s;
+  animation-name: appear;
+  animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
 }
-@keyframes moveInRight {
+@keyframes appear {
   0% {
     opacity: 0;
   }
