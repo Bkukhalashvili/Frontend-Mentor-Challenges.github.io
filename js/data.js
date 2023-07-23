@@ -35,25 +35,34 @@
 
 const info = [
   {
-    difficulty: "newbie",
-    title: "title test",
-    technology: ["html5", "css3"],
-    description: "description test",
+    link: "#",
     image: "/img/test.jpg",
-  },
-  {
-    difficulty: "newbie",
-    title: "title test1",
+    title: "Coding bootcamp testimonials slider",
     technology: ["html5", "css3"],
-    description: "description test1",
-    image: "/img/test1.jpg",
+    difficultyNum: 1,
+    difficulty: "newbie",
+    description:
+      "This challenge will be a nice test if you're new to JavaScript. It's also a great opportunity to play around with content animations and transitions.",
   },
   {
-    difficulty: "junior",
-    title: "title test2",
+    link: "#",
+    image: "/img/test.jpg",
+    title: "Bookmark landing page",
+    technology: ["html5", "css3"],
+    difficultyNum: 1,
+    difficulty: "newbie",
+    description:
+      "This challenge will really test your layout skills. There are also areas that will require some JavaScript",
+  },
+  {
+    link: "#",
+    image: "/img/test.jpg",
+    title: "Coding bootcamp testimonials slider",
     technology: ["html5", "css3", "javascript"],
-    description: "description test2",
-    image: "/img/test2.jpg",
+    difficultyNum: 2,
+    difficulty: "junior",
+    description:
+      "This challenge will be a nice test if you're new to JavaScript. It's also a great opportunity to play around with content animations and transitions.",
   },
 ];
 

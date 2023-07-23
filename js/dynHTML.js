@@ -1,10 +1,11 @@
-import { info } from "./data.js";
+// import { info } from "./data.js";
 
 async function displayData(info, location) {
   // await locationHandler();
   let cardsEl = document.querySelector(".cards");
-  if (location === "/") {
-    info.forEach((obj) => {
+  // if (location === "/") {
+  info.forEach((obj) => {
+    if (obj.difficulty === location || location === "/") {
       let icons = ``;
 
       for (let i = 0; i < obj.technology.length; i++) {
@@ -18,8 +19,8 @@ async function displayData(info, location) {
 
       cardsEl.innerHTML += `
       <div class="card">
-      <a href="#" class="card__link">
-      <img src="/img/test.jpg" alt="C" class="card__image" />
+      <a href=${obj.link} class="card__link">
+      <img src=${obj.image} alt="C" class="card__image" />
 
       <div class="card__info">
       <h2 class="card__info__title">
@@ -28,7 +29,7 @@ async function displayData(info, location) {
       <div class="card__info__difficulty">
       ${icons}
         <p class="card__info__difficulty__level card__info__difficulty__level--${obj.difficulty}">
-          <span class="card__info__difficulty__level--num card__info__difficulty__level--num--${obj.difficulty}"> 01 </span>
+          <span class="card__info__difficulty__level--num card__info__difficulty__level--num--${obj.difficulty}"> ${obj.difficultyNum} </span>
           <span class="card__info__difficulty__level--title card__info__difficulty__level--title--${obj.difficulty}">
             ${obj.difficulty}
           </span>
@@ -41,10 +42,14 @@ async function displayData(info, location) {
       </a>
       </div>
       `;
-    });
-  } else {
-    console.log(location);
-  }
+    } else {
+      console.log(location);
+      console.log("why here");
+    }
+  });
+  // } else {
+  //   console.log(location);
+  // }
 }
 // displayData(info);
 
