@@ -5,7 +5,7 @@ async function displayData(info, location) {
   let cardsEl = document.querySelector(".cards");
   // if (location === "/") {
   info.forEach((obj) => {
-    if (obj.difficulty === location || location === "/") {
+    if (obj.difficulty === location || location === "/" || location === "all") {
       let icons = ``;
 
       for (let i = 0; i < obj.technology.length; i++) {

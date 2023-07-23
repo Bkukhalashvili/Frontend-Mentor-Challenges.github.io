@@ -13,6 +13,11 @@ const routes = {
     title: "Frontend Mentor Challenges",
     description: "Frontend Mentor Challenges",
   },
+  all: {
+    template: "/templates/index.html",
+    title: "Frontend Mentor Challenges",
+    description: "Frontend Mentor Challenges",
+  },
   newbie: {
     template: "/templates/newbie.html",
     title: `FEMC — Newbie`,
@@ -53,9 +58,9 @@ const locationHandler = async () => {
     console.log(location);
 
     // adds style to navigation depending on which page route is active
-    document.querySelectorAll(`[href="/"]`)[1].classList.add("active");
+    document.querySelectorAll(`[href="#all"]`)[0].classList.add("active");
   } else {
-    document.querySelectorAll(`[href="/"]`)[1].classList.remove("active");
+    document.querySelectorAll(`[href="#all"]`)[0].classList.remove("active");
     document.querySelector(`[href="#${location}"]`).classList.add("active");
 
     if (typeof activePage != "undefined" && activePage != "/") {
