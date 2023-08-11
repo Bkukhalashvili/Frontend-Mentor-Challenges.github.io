@@ -9,12 +9,12 @@ const routes = {
     description: "Error page",
   },
   "/": {
-    template: "/templates/index.html",
+    template: "/templates/all.html",
     title: "Frontend Mentor Challenges",
     description: "Frontend Mentor Challenges",
   },
   all: {
-    template: "/templates/index.html",
+    template: "/templates/all.html",
     title: "Frontend Mentor Challenges",
     description: "Frontend Mentor Challenges",
   },
