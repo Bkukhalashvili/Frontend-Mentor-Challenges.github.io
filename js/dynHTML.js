@@ -42,15 +42,19 @@ async function displayData(info, location) {
       </a>
       </div>
       `;
-    } else {
-      console.log(location);
-      console.log("why here");
     }
   });
-  // } else {
-  //   console.log(location);
-  // }
+
+  if (cardsEl?.children.length === 0) {
+    cardsEl.innerHTML += `
+    <div class="card card--soon" style="height:484.06px">
+    <div class="card__info">
+    <h2 class="card__info__title">
+      Coming Soon™
+    </h2>
+    </div>
+    `;
+  }
 }
-// displayData(info);
 
 export { displayData };
