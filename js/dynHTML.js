@@ -47,7 +47,7 @@ async function displayData(info, location) {
 
   if (cardsEl?.children.length === 0) {
     cardsEl.innerHTML += `
-    <div class="card card--soon" style="height:484.06px">
+    <div class="card card--soon" style="height:48.4462rem">
     <div class="card__info">
     <h2 class="card__info__title">
       Coming Soon™
