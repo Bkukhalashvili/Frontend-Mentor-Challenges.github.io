@@ -1,0 +1,51 @@
+@import "./02_variables";
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  padding: 1.5rem 0 1.5rem 2rem;
+
+  &__return-link {
+    &,
+    &__return-link:link,
+    &__return-link:visited {
+      text-decoration: none;
+    }
+
+    &__icon {
+      font-size: 5rem;
+      color: rgba(255, 255, 255, 0.4);
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateX(-3px);
+        color: rgba(255, 255, 255, 0.8);
+
+        // disables hover effects on touch screen
+        @media only screen and (max-width: 48em),
+          only screen and (hover: none) {
+          transform: translateY(0px);
+          color: rgba(255, 255, 255, 0.4);
+        }
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding: 3rem 0 3rem;
+}

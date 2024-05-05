@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/02_style.css" />
+    <link rel="stylesheet" href="./css/02_base.css" />
 
-  Your Result
-  76
-  of 100
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__return-link" href="/index.html">
+        <ion-icon
+          class="header__return-link__icon"
+          name="arrow-back-circle-outline"
+        ></ion-icon>
+      </a>
+    </header>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <main class="main">
+      <section class="section-challenge">
+        <div class="component">
+          Your Result 76 of 100 Great You scored higher than 65% of the people
+          who have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100
+          Verbal 61 / 100 Visual 72 / 100 Continue
+        </div>
+      </section>
+    </main>
 
-  Reaction
-  80 / 100
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content__copyright">
+          Copyright &copy; <span class="year">0000</span> by BK Inc.
+        </p>
+      </div>
+    </footer>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="/js/router.js"></script>
+  </body>
 </html>
