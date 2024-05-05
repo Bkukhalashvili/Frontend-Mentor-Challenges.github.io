@@ -35,14 +35,14 @@
 
 const info = [
   {
-    link: "#",
-    image: "/img/test.jpg",
-    title: "Coding bootcamp testimonials slider",
+    link: "/challenges/01_nft-preview-card/01_index.html",
+    image: "/challenges/01_nft-preview-card/design/desktop-preview.jpg",
+    title: "NFT preview card component",
     technology: ["html5", "css3"],
     difficultyNum: 1,
     difficulty: "newbie",
     description:
-      "This challenge will be a nice test if you're new to JavaScript. It's also a great opportunity to play around with content animations and transitions.",
+      "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
   },
   {
     link: "#",

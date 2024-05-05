@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/01_base.css" />
+    <link rel="stylesheet" href="./css/01_style.css" />
+
+    <title>NFT preview card component</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__return-link" href="/index.html">
+        <ion-icon
+          class="header__return-link__icon"
+          name="arrow-back-circle-outline"
+        ></ion-icon>
+      </a>
+    </header>
+    <main class="main">
+      <section class="section-challenge">
+        <div class="nft-card">
+          <a href="#">
+            <div class="nft-card__image-container">
+              <div class="nft-card__image-container__gradient">
+                <img
+                  src="./images/icon-view.svg"
+                  alt=""
+                  class="nft-card__image-container__view"
+                />
+              </div>
+            </div>
+          </a>
+          <div class="nft-card__info">
+            <a href="#" class="nft-card__info__title">Equilibrium #3429</a>
+            <div class="nft-card__info__description">
+              Our Equilibrium collection promotes balance and calm.
+            </div>
+            <div class="nft-card__info__purchase">
+              <div class="nft-card__info__purchase__left-container">
+                <img src="./images/icon-ethereum.svg" alt="" class="svg-icon" />
+                <span class="nft-card__info__purchase__left-container__price">
+                  0.041 ETH</span
+                >
+              </div>
+              <div class="nft-card__info__purchase__right-container">
+                <img src="./images/icon-clock.svg" alt="" class="svg-icon" />
+                <span class="nft-card__info__right-container__time">
+                  3 days left</span
+                >
+              </div>
+            </div>
+            <div class="nft-card__info__author">
+              <img
+                src="./images/image-avatar.png"
+                alt=""
+                class="nft-card__info__author__image"
+              />
+              <span class="nft-card__info__author__name">
+                Creation of
+                <a href="#" class="nft-card__info__author__name__change">
+                  Jules Wyvern
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content__copyright">
+          Copyright &copy; <span class="year">0000</span> by BK Inc.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="/js/router.js"></script>
+  </body>
+</html>
