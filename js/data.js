@@ -45,14 +45,15 @@ const info = [
       "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
   },
   {
-    link: "#",
-    image: "/img/test.jpg",
-    title: "Bookmark landing page",
-    technology: ["html5", "css3"],
+    link: "/challenges/02_results-summary-component/02_index.html",
+    image:
+      "/challenges/02_results-summary-component/design/desktop-preview.jpg",
+    title: "Results summary component",
+    technology: ["html5", "css3", "javascript"],
     difficultyNum: 1,
     difficulty: "newbie",
     description:
-      "This challenge will really test your layout skills. There are also areas that will require some JavaScript",
+      "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
   },
   {
     link: "#",
