@@ -11,7 +11,16 @@ html {
 }
 
 body {
-  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.main {
+  display: grid;
+  flex: 1;
 }
