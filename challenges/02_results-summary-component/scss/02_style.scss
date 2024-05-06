@@ -34,7 +34,8 @@
       }
 
       &:active {
-        color: rgba(255, 255, 255, 0.8);
+        // color: rgba(255, 255, 255, 0.8);
+        color: hsl(0, 0%, 9%);
       }
     }
   }
@@ -77,7 +78,7 @@
 
     &__title {
       padding: 0 3rem 3rem 3rem;
-      color: hsl(249, 100%, 87%);
+      color: $color-light-lavender;
       font-size: 2rem;
       font-weight: 600;
     }
@@ -106,9 +107,10 @@
 
       &__out-of {
         font-size: 1.4rem;
-        font-size: 800;
+        font-weight: 700;
         // padding-top: 1.5rem;
-        // color: $color-gray-blue;
+        // color: $color-light-lavender;
+        color: hsl(237, 9%, 61%);
       }
     }
 
@@ -131,6 +133,7 @@
         font-size: $default-font-size;
         line-height: 1.4;
         color: hsl(238, 74%, 73%);
+        color: $color-light-lavender;
         font-weight: 500;
       }
     }
@@ -168,6 +171,7 @@
         display: flex;
         padding: 1.5rem;
         background-color: hsl(240, 71%, 97%);
+        background-color: $color-pale-blue;
         border-radius: 1rem;
         margin-bottom: 1.5rem;
         justify-content: space-between;
@@ -238,6 +242,18 @@
 
       &:hover {
         background-color: hsl(245, 86%, 57%);
+        background-color: $color-gradient-card-light-royal-blue;
+
+        // disables hover effects on touch screen
+        @media only screen and (max-width: 48em),
+          only screen and (hover: none) {
+          background-color: $color-gray-blue;
+        }
+
+        // and enable them for click
+        &:active {
+          background-color: $color-gradient-card-light-royal-blue;
+        }
       }
     }
   }

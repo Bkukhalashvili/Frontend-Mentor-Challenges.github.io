@@ -24,7 +24,7 @@
   }
 }
 .header__return-link__icon:active {
-  color: rgba(255, 255, 255, 0.8);
+  color: hsl(0, 0%, 9%);
 }
 
 /**************************/
@@ -56,7 +56,7 @@
 }
 .component__left__title {
   padding: 0 3rem 3rem 3rem;
-  color: hsl(249, 100%, 87%);
+  color: hsl(241, 100%, 89%);
   font-size: 2rem;
   font-weight: 600;
 }
@@ -76,7 +76,8 @@
 }
 .component__left__result__out-of {
   font-size: 1.4rem;
-  font-size: 800;
+  font-weight: 700;
+  color: hsl(237, 9%, 61%);
 }
 .component__left__summary {
   display: flex;
@@ -95,6 +96,7 @@
   font-size: 1.6rem;
   line-height: 1.4;
   color: hsl(238, 74%, 73%);
+  color: hsl(241, 100%, 89%);
   font-weight: 500;
 }
 .component__right {
@@ -122,6 +124,7 @@
   display: flex;
   padding: 1.5rem;
   background-color: hsl(240, 71%, 97%);
+  background-color: hsl(221, 100%, 96%);
   border-radius: 1rem;
   margin-bottom: 1.5rem;
   justify-content: space-between;
@@ -174,6 +177,15 @@
 }
 .component__right__continue-btn:hover {
   background-color: hsl(245, 86%, 57%);
+  background-color: hsl(241, 81%, 54%);
+}
+@media only screen and (max-width: 48em), only screen and (hover: none) {
+  .component__right__continue-btn:hover {
+    background-color: hsl(224, 30%, 27%);
+  }
+}
+.component__right__continue-btn:hover:active {
+  background-color: hsl(241, 81%, 54%);
 }
 
 /**************************/
