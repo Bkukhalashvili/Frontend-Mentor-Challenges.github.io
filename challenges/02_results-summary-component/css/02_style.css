@@ -198,8 +198,8 @@
 /**************************/
 .footer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 1.4rem;
   padding: 3rem 0 3rem;
   color: hsl(0, 0%, 9%);

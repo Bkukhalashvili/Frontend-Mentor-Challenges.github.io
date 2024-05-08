@@ -1,4 +1,5 @@
 @import "./02_variables";
+@import "./02_mixins";
 
 /**************************/
 /* HEADER */
@@ -45,9 +46,10 @@
 /**************************/
 
 .section-challenge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flex-center-both;
 }
 
 .component {
@@ -66,10 +68,11 @@
   }
 
   &__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    @include flex-center-both-column;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     background-image: linear-gradient(
       0deg,
       $color-gradient-card-light-royal-blue,
@@ -88,10 +91,11 @@
     }
 
     &__result {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      @include flex-center-both-column;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
       background-image: linear-gradient(
         $color-gradient-circle-violet-blue,
         $color-gradient-circle-persian-blue
@@ -119,10 +123,11 @@
     }
 
     &__summary {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      // display: flex;
+      @include flex-center-both-column;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
       // margin-top: 3rem;
       padding: 3rem 3rem 2rem 3rem;
 
@@ -144,10 +149,11 @@
   }
 
   &__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @include flex-center-both-column;
     background-color: $color-white;
     // padding: 5rem;
     padding: 3rem;
@@ -268,9 +274,11 @@
 /**************************/
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex-center-both;
+
   font-size: 1.4rem;
   padding: 3rem 0 3rem;
   // background-color: red;
