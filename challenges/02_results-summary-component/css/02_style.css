@@ -140,14 +140,10 @@
   display: flex;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
 }
 .component__right__skills__container__score {
   font-weight: 700;
   font-size: 1.6rem;
-  display: flex;
-  align-items: center;
 }
 .component__right__skills__container__score__number {
   padding-right: 4px;

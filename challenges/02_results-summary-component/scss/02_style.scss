@@ -7,7 +7,6 @@
 
 .header {
   padding: 1.5rem 0 1.5rem 2rem;
-  // background-color: red;
 
   &__return-link {
     &,
@@ -46,33 +45,24 @@
 /**************************/
 
 .section-challenge {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   @include flex-center-both;
 }
 
 .component {
-  // display: flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // column-gap: 1rem;
   border-radius: 2.5rem;
   overflow: hidden;
   background-color: $color-white;
   box-shadow: 0 1rem 2rem rgba(black, 0.2);
-  // height: 100%;
 
   @media only screen and (max-width: 48em) {
     grid-template-columns: 1fr;
   }
 
   &__left {
-    // display: flex;
     @include flex-center-both-column;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+
     background-image: linear-gradient(
       0deg,
       $color-gradient-card-light-royal-blue,
@@ -80,7 +70,6 @@
     );
     border-radius: 2.5rem;
     width: 29rem;
-    // min-height: 100%;
     padding: 3rem;
 
     &__title {
@@ -91,44 +80,32 @@
     }
 
     &__result {
-      // display: flex;
       @include flex-center-both-column;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
+
       background-image: linear-gradient(
         $color-gradient-circle-violet-blue,
         $color-gradient-circle-persian-blue
       );
-      // font-size: 3.2rem;
-      padding: 4rem;
-      // height: 100%;
-      width: 9.6rem;
 
+      padding: 4rem;
+      width: 9.6rem;
       border-radius: 50%;
 
       &__score {
         font-size: 6rem;
         font-weight: 800;
-        // height: 50%;
       }
 
       &__out-of {
         font-size: 1.4rem;
         font-weight: 700;
-        // padding-top: 1.5rem;
-        // color: $color-light-lavender;
         color: hsl(237, 9%, 61%);
       }
     }
 
     &__summary {
-      // display: flex;
       @include flex-center-both-column;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
-      // margin-top: 3rem;
+
       padding: 3rem 3rem 2rem 3rem;
 
       &__title {
@@ -149,13 +126,9 @@
   }
 
   &__right {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     @include flex-center-both-column;
+
     background-color: $color-white;
-    // padding: 5rem;
     padding: 3rem;
     width: 29rem;
 
@@ -169,13 +142,8 @@
 
     &__skills {
       width: 100%;
-      // margin: 3rem;
       display: flex;
       flex-direction: column;
-      // align-items: center;
-      // justify-content: center;
-      // text-align: center;
-      // padding: 3rem;
 
       &__container {
         display: flex;
@@ -187,29 +155,18 @@
         justify-content: space-between;
         font-weight: 600;
         font-size: $default-font-size;
-        // min-height: 3rem;
-        // align-items: center;
-        // justify-content: center;
 
         &__text-box {
           display: flex;
           column-gap: 1rem;
-          justify-content: space-between;
-          align-items: center;
-          // text-align: center;
         }
 
         &__score {
           font-weight: 700;
           font-size: 1.6rem;
-          display: flex;
-          align-items: center;
-          // justify-content: center;
-          // text-align: center;
 
           &__number {
             padding-right: 4px;
-            // text-align: center;
             color: hsl(229, 23%, 24%);
           }
 
@@ -234,9 +191,6 @@
     }
 
     &__continue-btn {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
       padding: 1.5rem 10rem;
       font-weight: 700;
       font-size: $default-font-size;
@@ -246,7 +200,6 @@
       background-color: $color-gray-blue;
       color: $color-white;
       cursor: pointer;
-      // height: 100%;
 
       transition: all 0.3s;
 
@@ -274,9 +227,6 @@
 /**************************/
 
 .footer {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   @include flex-center-both;
 
   font-size: 1.4rem;
