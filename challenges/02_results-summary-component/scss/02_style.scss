@@ -171,7 +171,7 @@
       // text-align: center;
       // padding: 3rem;
 
-      &__box {
+      &__container {
         display: flex;
         padding: 1.5rem;
         background-color: hsl(240, 71%, 97%);
@@ -185,7 +185,7 @@
         // align-items: center;
         // justify-content: center;
 
-        &__text-container {
+        &__text-box {
           display: flex;
           column-gap: 1rem;
           justify-content: space-between;
