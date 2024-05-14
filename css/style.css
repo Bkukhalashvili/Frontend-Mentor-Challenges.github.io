@@ -266,8 +266,9 @@
 /* CARDS SECTION */
 /**************************/
 .section-cards {
-  width: -moz-fit-content;
-  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 3.2rem;
   margin: 0 auto;
 }
