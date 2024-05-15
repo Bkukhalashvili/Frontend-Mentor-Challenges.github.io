@@ -9,22 +9,21 @@
 }
 .header__return-link__icon {
   font-size: 5rem;
-  color: rgba(255, 255, 255, 0.4);
-  color: hsl(0, 0%, 9%);
+  color: #171717;
   transition: all 0.2s;
 }
 .header__return-link__icon:hover {
   transform: translateX(-3px);
-  color: hsl(300, 4%, 10%);
+  color: #454545;
 }
 @media only screen and (max-width: 48em), only screen and (hover: none) {
   .header__return-link__icon:hover {
     transform: translateY(0px);
-    color: rgba(255, 255, 255, 0.4);
+    color: #171717;
   }
 }
 .header__return-link__icon:active {
-  color: hsl(0, 0%, 9%);
+  color: #454545;
 }
 
 /**************************/
@@ -82,7 +81,7 @@
 .component__left__result__out-of {
   font-size: 1.4rem;
   font-weight: 700;
-  color: hsl(237, 9%, 61%);
+  color: #9393a5;
 }
 .component__left__summary {
   display: flex;
@@ -100,7 +99,7 @@
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.4;
-  color: hsl(238, 74%, 73%);
+  color: #878bed;
   color: hsl(241, 100%, 89%);
   font-weight: 500;
 }
@@ -118,7 +117,7 @@
   padding-bottom: 2rem;
   font-weight: 700;
   font-size: 2.2rem;
-  color: hsl(229, 23%, 27%);
+  color: #353b55;
 }
 .component__right__skills {
   width: 100%;
@@ -128,7 +127,6 @@
 .component__right__skills__container {
   display: flex;
   padding: 1.5rem;
-  background-color: hsl(240, 71%, 97%);
   background-color: hsl(221, 100%, 96%);
   border-radius: 1rem;
   margin-bottom: 1.5rem;
@@ -147,10 +145,10 @@
 }
 .component__right__skills__container__score__number {
   padding-right: 4px;
-  color: hsl(229, 23%, 24%);
+  color: #2f344b;
 }
 .component__right__skills__container__score__out-of {
-  color: hsl(237, 9%, 61%);
+  color: #9393a5;
 }
 .component__right .reaction {
   color: hsl(0, 100%, 67%);
@@ -177,7 +175,6 @@
   transition: all 0.3s;
 }
 .component__right__continue-btn:hover {
-  background-color: hsl(245, 86%, 57%);
   background-color: hsl(241, 81%, 54%);
 }
 @media only screen and (max-width: 48em), only screen and (hover: none) {
@@ -198,5 +195,5 @@
   align-items: center;
   font-size: 1.4rem;
   padding: 3rem 0 3rem;
-  color: hsl(0, 0%, 9%);
+  color: #171717;
 }
