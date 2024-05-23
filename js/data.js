@@ -56,14 +56,15 @@ const info = [
       "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
   },
   {
-    link: "#",
-    image: "/img/test.jpg",
-    title: "Coding bootcamp testimonials slider",
+    link: "/challenges/03_sunnyside-agency-landing-page",
+    image:
+      "/challenges/03_sunnyside-agency-landing-page/design/desktop-preview.jpg",
+    title: "Sunnyside agency landing page",
     technology: ["html5", "css3", "javascript"],
     difficultyNum: 2,
     difficulty: "junior",
     description:
-      "This challenge will be a nice test if you're new to JavaScript. It's also a great opportunity to play around with content animations and transitions.",
+      "This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.",
   },
 ];
 
