@@ -1,0 +1,46 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+.header__return-link {
+  // padding: 1.5rem 0 1.5rem 2rem;
+  &,
+  &__return-link:link,
+  &__return-link:visited {
+    text-decoration: none;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    color: #171717;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateX(-3px);
+      color: #454545;
+
+      // disables hover effects on touch screen
+      @media only screen and (max-width: 48em), only screen and (hover: none) {
+        transform: translateY(0px);
+        color: #171717;
+      }
+    }
+
+    &:active {
+      color: #454545;
+    }
+  }
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 3rem 0 3rem;
+  color: #171717;
+}

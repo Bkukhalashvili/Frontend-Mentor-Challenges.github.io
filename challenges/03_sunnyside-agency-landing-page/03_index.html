@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/03_style.css" />
+    <link rel="stylesheet" href="./css/03_base.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <a href="index.html">
+        <img src="images/logo.svg" alt="" class="logo" />
+      </a> -->
+      <a class="header__return-link" href="/index.html">
+        <ion-icon
+          class="header__return-link__icon"
+          name="arrow-back-circle-outline"
+        ></ion-icon>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="03_index.html" class="main-nav-link">About</a></li>
+          <li><a href="03_index.html" class="main-nav-link">Services</a></li>
+          <li><a href="03_index.html" class="main-nav-link">Projects</a></li>
+          <li>
+            <a href="03_index.html" class="main-nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main"></main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content__copyright">
+          Copyright &copy; <span class="year">0000</span> by BK Inc.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="/js/router.js"></script>
+  </body>
+</html>

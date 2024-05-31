@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 23.75em) {
+  html {
+    font-size: 54%;
+  }
+}
+@media only screen and (max-width: 20em) {
+  html {
+    font-size: 52%;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.main {
+  display: grid;
+  flex: 1;
+}

@@ -1,0 +1,36 @@
+/**************************/
+/* HEADER */
+/**************************/
+.header__return-link, .header__return-link__return-link:link, .header__return-link__return-link:visited {
+  text-decoration: none;
+}
+.header__return-link__icon {
+  font-size: 5rem;
+  color: #171717;
+  transition: all 0.2s;
+}
+.header__return-link__icon:hover {
+  transform: translateX(-3px);
+  color: #454545;
+}
+@media only screen and (max-width: 48em), only screen and (hover: none) {
+  .header__return-link__icon:hover {
+    transform: translateY(0px);
+    color: #171717;
+  }
+}
+.header__return-link__icon:active {
+  color: #454545;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 3rem 0 3rem;
+  color: #171717;
+}

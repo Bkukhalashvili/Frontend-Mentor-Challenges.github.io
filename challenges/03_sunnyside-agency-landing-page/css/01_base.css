@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 91.31em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 82.18em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 73.12em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  color: #8bacda;
+}
