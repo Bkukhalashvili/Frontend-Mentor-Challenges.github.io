@@ -1,26 +1,91 @@
 /**************************/
 /* HEADER */
 /**************************/
-.header__return-link, .header__return-link__return-link:link, .header__return-link__return-link:visited {
+.return-link, .return-link:link, .return-link:visited {
   text-decoration: none;
 }
-.header__return-link__icon {
+.return-link__icon {
   font-size: 5rem;
   color: #171717;
   transition: all 0.2s;
 }
-.header__return-link__icon:hover {
+.return-link__icon:hover {
   transform: translateX(-3px);
   color: #454545;
 }
 @media only screen and (max-width: 48em), only screen and (hover: none) {
-  .header__return-link__icon:hover {
+  .return-link__icon:hover {
     transform: translateY(0px);
     color: #171717;
   }
 }
-.header__return-link__icon:active {
+.return-link__icon:active {
   color: #454545;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 3rem 3rem;
+}
+.navigation__logo {
+  display: flex;
+  align-items: center;
+  width: 17rem;
+}
+.navigation__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 4.4rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+.navigation__btn {
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  color: black !important;
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 700 !important;
+  border-radius: 50px;
+}
+
+/**************************/
+/* SECTION- HERO */
+/**************************/
+.section-hero {
+  position: relative;
+  height: 90vh;
+  margin: auto;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: bottom;
+}
+.section-hero__title {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  width: 80%;
+  box-sizing: border-box;
+}
+.section-hero__text {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+  padding-bottom: 8rem;
+  letter-spacing: 0.8rem;
 }
 
 /**************************/
