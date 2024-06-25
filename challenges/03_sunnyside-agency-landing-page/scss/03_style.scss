@@ -340,6 +340,24 @@
 }
 
 /**************************/
+/* SECTION- GALLERY */
+/**************************/
+
+.section-gallery {
+  // max-width: 100%;
+}
+
+.gallery {
+  display: flex;
+
+  // max-width: 100%;
+  &__img {
+    // width: auto;
+    max-width: 100%;
+  }
+}
+
+/**************************/
 /* FOOTER */
 /**************************/
 
