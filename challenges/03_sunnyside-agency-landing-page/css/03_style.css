@@ -172,6 +172,58 @@
 }
 
 /**************************/
+/* SECTION- TESTIMONIALS */
+/**************************/
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 8rem;
+  background-color: #fff;
+}
+.section-testimonials__title {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin-bottom: 10rem;
+  color: grey;
+}
+
+.testimonials {
+  display: flex;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+}
+.client__img {
+  border-radius: 50%;
+  width: 8rem;
+  margin-bottom: 5rem;
+}
+.client__text {
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: darkgrey;
+}
+.client__name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: black;
+}
+.client__position {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+/**************************/
 /* FOOTER */
 /**************************/
 .footer {
