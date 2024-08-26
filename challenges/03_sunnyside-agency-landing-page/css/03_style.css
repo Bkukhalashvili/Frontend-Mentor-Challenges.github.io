@@ -116,12 +116,15 @@
   font-weight: 900;
   font-family: "Fraunces", serif;
   margin-bottom: 3rem;
-  color: black;
+  color: #222d3d;
 }
 .learn-more__text {
   margin-bottom: 3rem;
   line-height: 3rem;
-  color: hsl(212, 27%, 19%);
+  color: #7a7986;
+}
+.learn-more__ending__text {
+  color: #05587f;
 }
 .learn-more__link {
   font-family: "Fraunces", serif;
@@ -129,6 +132,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: hsl(212, 22%, 12%);
+  color: #222d3d;
 }
 .learn-more__ending-one {
   position: relative;
@@ -194,7 +198,7 @@
   font-weight: 700;
   letter-spacing: 0.5rem;
   margin-bottom: 10rem;
-  color: grey;
+  color: #a5a19f;
 }
 
 .testimonials {
@@ -216,17 +220,17 @@
   line-height: 3rem;
   margin-bottom: 5rem;
   text-align: center;
-  color: darkgrey;
+  color: #5a5a5d;
 }
 .client__name {
   font-family: "Fraunces", serif;
   font-weight: 900;
   margin-bottom: 1rem;
-  color: black;
+  color: #242c39;
 }
 .client__position {
   font-size: 1.4rem;
-  color: gray;
+  color: #b6b4b4;
 }
 
 /**************************/
@@ -249,13 +253,14 @@
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  background-color: #171717;
+  background-color: #90d4c5;
 }
 .footer__logo-row {
   padding: 6rem 0 5rem 0;
 }
 .footer__logo-img {
   height: 35px;
+  filter: invert(36%) sepia(22%) saturate(1153%) hue-rotate(118deg) brightness(55%) contrast(81%);
 }
 .footer__nav {
   list-style: none;
@@ -277,9 +282,9 @@
 }
 .footer__link:link, .footer__link:visited {
   text-decoration: none;
-  color: #fff;
+  color: #2d7464;
   transition: all 0.3s;
 }
 .footer__link:hover, .footer__link:active {
-  color: #bb0000;
+  color: #feffff;
 }
