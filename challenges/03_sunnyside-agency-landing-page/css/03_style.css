@@ -380,6 +380,13 @@
 /**************************/
 .gallery {
   display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media only screen and (max-width: 48em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .gallery__img {
   max-width: 100%;
