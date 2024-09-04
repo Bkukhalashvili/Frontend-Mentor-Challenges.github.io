@@ -434,6 +434,17 @@
   padding: 15rem 8rem;
   background-color: #fff;
 
+  @media only screen and (max-width: 66.125em) {
+    padding: 15rem 5rem;
+  }
+  @media only screen and (max-width: 57em) {
+    padding: 15rem 2rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 15rem 8rem;
+  }
+
   &__title {
     text-transform: uppercase;
     font-family: "Fraunces", serif;
@@ -447,6 +458,9 @@
 .testimonials {
   display: flex;
   // flex-direction: row;
+  @media only screen and (max-width: 48em) {
+    flex-direction: column;
+  }
 }
 
 .client {
@@ -457,6 +471,20 @@
   // justify-content: center;
   // text-align: center;
   padding: 0 4rem;
+
+  @media only screen and (max-width: 66.125em) {
+    padding: 0rem 2rem;
+  }
+  @media only screen and (max-width: 57em) {
+    padding: 0rem 1rem;
+  }
+
+  @media only screen and (max-width: 48em) {
+    padding: 0 4rem;
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
   &__img {
     border-radius: 50%;
     width: 8rem;
