@@ -47,9 +47,29 @@
     padding: 0 3rem;
     justify-content: center;
 
-    // @media only screen and (max-width: 45.9375em) {
-    //   padding: 3rem 3rem;
-    // }
+    @media only screen and (max-width: 45.9375em) {
+      padding: 3.9rem 3rem;
+    }
+  }
+}
+
+.triangle {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  z-index: 1;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  opacity: 0;
+  visibility: hidden;
+  // pointer-events: none;
+
+  @media only screen and (max-width: 45.9375em) {
+    opacity: 1;
+    visibility: visible;
+    // pointer-events: all;
+    top: 9.1rem;
+    right: 3.7rem;
   }
 }
 
@@ -62,27 +82,29 @@
   background-color: #3dbeff;
 
   @media only screen and (max-width: 45.9375em) {
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
-    // top: -5rem;
-    // left: 0;
-    // width: 100%;
+    top: 13rem;
+    right: 3.7rem;
+    // width: 70%;
     // height: 100vh;
+    // height: 500rem !important;
     // transform: translateX(100%);
-    // z-index: 9999;
+    z-index: 9999;
     // display: flex;
     // align-items: center;
     // justify-content: center;
+    // flex-direction: row;
     // transition: all 0.5s ease-in;
 
     /* 1) Hide it visually */
-    opacity: 0;
+    // opacity: 0;
 
     /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
+    // pointer-events: none;
 
     /* 3) Hide it from screen readers */
-    visibility: hidden;
+    // visibility: hidden;
   }
 
   &__list {
@@ -90,6 +112,14 @@
     list-style: none;
     align-items: center;
     gap: 4.4rem;
+
+    @media only screen and (max-width: 45.9375em) {
+      flex-direction: column;
+      gap: 4rem;
+      // min-width: 100%;
+      padding: 2rem 10rem;
+      font-size: 3rem;
+    }
   }
 
   &__link:link,
@@ -100,6 +130,10 @@
     font-weight: 400;
     // font-size: 2rem;
     // transition: all 0.3s;
+
+    @media only screen and (max-width: 45.9375em) {
+      color: #7d7d85;
+    }
   }
 
   &__btn {
@@ -110,6 +144,11 @@
     font-size: 1.6rem;
     font-weight: 700 !important;
     border-radius: 50px;
+
+    @media only screen and (max-width: 45.9375em) {
+      background-color: #fbd601;
+      // color: #7d7d85;
+    }
 
     &:hover {
       color: #fff !important;
@@ -131,6 +170,7 @@
     // grid-template-columns: 1fr;
     display: block;
     z-index: 9999;
+    padding: 0 3rem;
 
     .navigation {
       background-color: #000;
@@ -140,7 +180,7 @@
   &__icon {
     height: 4.8rem;
     width: 4.8rem;
-    color: red;
+    color: #7fe2fd;
   }
 }
 

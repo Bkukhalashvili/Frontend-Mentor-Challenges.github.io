@@ -36,6 +36,31 @@
   padding: 0 3rem;
   justify-content: center;
 }
+@media only screen and (max-width: 45.9375em) {
+  .header__logo {
+    padding: 3.9rem 3rem;
+  }
+}
+
+.triangle {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff;
+  z-index: 1;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  opacity: 0;
+  visibility: hidden;
+}
+@media only screen and (max-width: 45.9375em) {
+  .triangle {
+    opacity: 1;
+    visibility: visible;
+    top: 9.1rem;
+    right: 3.7rem;
+  }
+}
 
 .navigation {
   display: flex;
@@ -47,14 +72,14 @@
 }
 @media only screen and (max-width: 45.9375em) {
   .navigation {
-    background-color: #000;
+    background-color: #fff;
     position: absolute;
+    top: 13rem;
+    right: 3.7rem;
+    z-index: 9999;
     /* 1) Hide it visually */
-    opacity: 0;
     /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
     /* 3) Hide it from screen readers */
-    visibility: hidden;
   }
 }
 .navigation__list {
@@ -63,11 +88,24 @@
   align-items: center;
   gap: 4.4rem;
 }
+@media only screen and (max-width: 45.9375em) {
+  .navigation__list {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 10rem;
+    font-size: 3rem;
+  }
+}
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   text-decoration: none;
   color: #fff;
   font-weight: 400;
+}
+@media only screen and (max-width: 45.9375em) {
+  .navigation__link:link, .navigation__link:visited {
+    color: #7d7d85;
+  }
 }
 .navigation__btn {
   padding: 1.5rem 2.5rem;
@@ -77,6 +115,11 @@
   font-size: 1.6rem;
   font-weight: 700 !important;
   border-radius: 50px;
+}
+@media only screen and (max-width: 45.9375em) {
+  .navigation__btn {
+    background-color: #fbd601;
+  }
 }
 .navigation__btn:hover {
   color: #fff !important;
@@ -95,6 +138,7 @@
   .btn-mobile-nav {
     display: block;
     z-index: 9999;
+    padding: 0 3rem;
   }
   .btn-mobile-nav .navigation {
     background-color: #000;
@@ -103,7 +147,7 @@
 .btn-mobile-nav__icon {
   height: 4.8rem;
   width: 4.8rem;
-  color: red;
+  color: #7fe2fd;
 }
 
 .mobile-nav-logo {
