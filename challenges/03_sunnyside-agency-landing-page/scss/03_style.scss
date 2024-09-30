@@ -204,6 +204,10 @@
     font-family: "Fraunces", serif;
     width: 80%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: 30em) {
+      top: 38%;
+    }
   }
 
   &__text {
@@ -212,6 +216,14 @@
     color: #fff;
     padding-bottom: 8rem;
     letter-spacing: 0.8rem;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: 24.6875em) {
+      font-size: 4rem;
+    }
   }
 
   // &__icon {
@@ -299,6 +311,14 @@
       // padding-bottom: 5rem;
       // align-items: center;
       height: auto;
+    }
+
+    @media only screen and (max-width: 30em) {
+      padding: 10rem 5rem;
+    }
+
+    @media only screen and (max-width: 26.5625em) {
+      padding: 10rem 3rem;
     }
   }
 
@@ -429,6 +449,10 @@
     // min-height: 100%;
     height: 600px;
     width: auto;
+
+    // @media only screen and (max-width: 30em) {
+    //   width: 90%;
+    // }
   }
 
   &__ending-two {
@@ -442,6 +466,9 @@
     // min-height: 100%;
     height: 600px;
     width: auto;
+    // @media only screen and (max-width: 30em) {
+    //   width: 90%;
+    // }
   }
 
   &__ending__text-box {
@@ -508,6 +535,9 @@
   height: auto;
   // object-fit: cover;
   // display: block;
+  // @media only screen and (max-width: 30em) {
+  //   width: 90%;
+  // }
 }
 
 .test {
@@ -544,6 +574,10 @@
 
   @media only screen and (max-width: 48em) {
     padding: 15rem 8rem;
+  }
+
+  @media only screen and (max-width: 30em) {
+    padding: 15rem 2rem;
   }
 
   &__title {
@@ -585,6 +619,10 @@
     &:not(:last-child) {
       margin-bottom: 5rem;
     }
+  }
+
+  @media only screen and (max-width: 30em) {
+    padding: 0rem 2rem;
   }
   &__img {
     border-radius: 50%;
