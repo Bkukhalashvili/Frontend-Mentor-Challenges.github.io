@@ -136,6 +136,7 @@
   border: none;
   background: none;
   cursor: pointer;
+  touch-action: manipulation;
   display: none;
 }
 @media only screen and (max-width: 45.9375em) {
