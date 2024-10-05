@@ -1,28 +1,6 @@
 /**************************/
 /* HEADER */
 /**************************/
-.return-link, .return-link:link, .return-link:visited {
-  text-decoration: none;
-}
-.return-link__icon {
-  font-size: 5rem;
-  color: #171717;
-  transition: all 0.2s;
-}
-.return-link__icon:hover {
-  transform: translateX(-3px);
-  color: #454545;
-}
-@media only screen and (max-width: 48em), only screen and (hover: none) {
-  .return-link__icon:hover {
-    transform: translateY(0px);
-    color: #171717;
-  }
-}
-.return-link__icon:active {
-  color: #454545;
-}
-
 .header {
   display: flex;
   background-color: #3dbeff;
@@ -347,7 +325,6 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: hsl(212, 22%, 12%);
   color: #222d3d;
   width: -moz-fit-content;
   width: fit-content;
@@ -551,6 +528,15 @@
 /**************************/
 /* FOOTER */
 /**************************/
+.footer-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 3rem 0 3rem;
+  color: #171717;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

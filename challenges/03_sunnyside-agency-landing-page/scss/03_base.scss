@@ -8,7 +8,6 @@
 
 html {
   font-size: 62.5%;
-  // height: 100%;
   @media only screen and (max-width: 48em) {
     font-size: 62.5%;
   }
@@ -17,40 +16,17 @@ html {
     font-size: 56.25%;
   }
 
-  // @media only screen and (max-width: 56.25em) {
-  //   font-size: 50%;
-  // }
-
   @media only screen and (min-width: 112.5em) {
     font-size: 75%;
   }
-
-  // @media only screen and (max-width: 160em) {
-  //   font-size: 90%;
-  // }
-  // @media only screen and (max-width: 23.75em) {
-  //   font-size: 54%;
-  // }
-  // @media only screen and (max-width: 20em) {
-  //   font-size: 52%;
-  // }
-
-  // @media only screen and (max-width: 37.5em) {
-  //   @content;
-  // }
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-
   font-family: "Barlow", sans-serif;
-  // font-family: "Fraunces", serif;
-
   font-size: 1.8rem;
   font-weight: 400;
-  // background-color: hsl(200, 100%, 62%);
-  background-color: green;
   color: #cac5bb;
 }
