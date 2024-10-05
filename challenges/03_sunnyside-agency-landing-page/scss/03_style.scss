@@ -221,7 +221,7 @@
   // margin: auto;
   background-image: url("../images/desktop/image-header.jpg");
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   background-position: bottom;
 
   &__title {
@@ -253,6 +253,7 @@
       // background-position: center;
       height: 60rem;
       padding-top: 8rem;
+      // margin-top: 15rem;
     }
   }
 
@@ -377,6 +378,10 @@
       height: auto;
     }
 
+    @media only screen and (max-width: 38.9375em) {
+      padding: 10rem 10rem;
+    }
+
     @media only screen and (max-width: 30em) {
       padding: 10rem 5rem;
     }
@@ -487,7 +492,7 @@
       z-index: 0;
 
       @media only screen and (max-width: 48em) {
-        top: 12%;
+        // top: 12%;
       }
     }
     .underline-red {
