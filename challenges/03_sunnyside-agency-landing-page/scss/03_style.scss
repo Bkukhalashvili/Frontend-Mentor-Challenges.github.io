@@ -1,19 +1,19 @@
+@import "./03_variables";
+@import "./03_mixins";
+
 /**************************/
 /* HEADER */
 /**************************/
 
 .header {
-  display: flex;
-  background-color: #3dbeff;
+  @include flex-center-align;
   justify-content: space-between;
-  align-items: center;
+  background-color: #3dbeff;
 
   &__logo {
-    display: flex;
-    align-items: center;
+    @include flex-center-both;
     width: 17rem;
     padding: 0 3rem;
-    justify-content: center;
 
     @media only screen and (max-width: 45.9375em) {
       padding: 3.9rem 3rem;
@@ -22,51 +22,40 @@
 }
 
 .navigation {
-  display: flex;
+  @include flex-center-align;
   justify-content: space-between;
-  align-items: center;
   background-color: transparent;
   padding: 3rem 3rem;
   background-color: #3dbeff;
 
   @media only screen and (max-width: 45.9375em) {
-    background-color: #fff;
     position: absolute;
+    @include flex-center-justify;
     top: 13rem;
     right: 3.7rem;
-    z-index: 9999;
-    padding: 0;
-
     width: 83%;
-    transform: translateX(0%);
+    padding: 0;
     z-index: 9999;
-    display: flex;
-    justify-content: center;
-    transition: all 0.5s ease-in;
+    background-color: #fff;
 
-    /* 1) Hide it visually */
-    opacity: 0;
-    /* 2) Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
-    /* 3) Hide it from screen readers */
-    visibility: hidden;
+    @include fade(hide);
+    transform: translateX(0%);
+    transition: all 0.3s ease-in;
   }
 
   &__triangle {
     position: absolute;
-    height: 4rem;
-    width: 4rem;
-    background-color: #fff;
-    z-index: 1;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    @include box(4rem, 4rem);
     top: -4rem;
     right: 0rem;
+    z-index: 1;
+    background-color: #fff;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
 
   &__list {
-    display: flex;
+    @include flex-center-align;
     list-style: none;
-    align-items: center;
     gap: 4.4rem;
     height: auto;
 
@@ -75,12 +64,6 @@
       gap: 4rem;
       padding: 8rem 10rem;
       font-size: 3rem;
-    }
-
-    @media only screen and (max-width: 26.5625em) {
-    }
-
-    @media only screen and (max-width: 20.0625em) {
     }
   }
 
@@ -98,12 +81,12 @@
 
   &__btn {
     padding: 1.5rem 2.5rem;
-    background-color: white;
-    color: black !important;
     font-family: "Fraunces", serif;
     font-size: 1.6rem;
     font-weight: 700 !important;
     border-radius: 50px;
+    background-color: white;
+    color: black !important;
 
     @media only screen and (max-width: 45.9375em) {
       background-color: #fbd601;
@@ -125,7 +108,6 @@
   background: none;
   cursor: pointer;
   touch-action: manipulation;
-
   display: none;
 
   @media only screen and (max-width: 45.9375em) {
@@ -139,8 +121,7 @@
   }
 
   &__icon {
-    height: 4.8rem;
-    width: 4.8rem;
+    @include box(4.8rem, 4.8rem);
     color: #7fe2fd;
   }
 }
@@ -152,9 +133,7 @@
 }
 
 .nav-open .navigation {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
+  @include fade(show);
 }
 
 /**************************/
@@ -169,13 +148,11 @@
   background-position: bottom;
 
   &__title {
+    @include flex-center-align;
+    flex-direction: column;
     text-align: center;
     font-family: "Fraunces", serif;
     width: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 8rem;
 
     @media only screen and (max-width: 24.6875em) {
@@ -187,9 +164,9 @@
   &__text {
     font-size: 5rem;
     font-weight: 900;
-    color: #fff;
     padding-bottom: 8rem;
     letter-spacing: 0.8rem;
+    color: #fff;
 
     @media only screen and (max-width: 30em) {
       font-size: 4.5rem;
@@ -227,13 +204,7 @@
   }
 }
 
-.line {
-  background-color: red;
-  width: 100%;
-  height: 100%;
-}
-
-.one {
+.grid-row-arrange {
   @media only screen and (max-width: 48em) {
     grid-row: 2;
   }
@@ -241,10 +212,9 @@
 
 .learn-more {
   &__text-box {
-    display: flex;
+    @include flex-center-justify;
     flex-direction: column;
     padding: 0 15.5rem;
-    justify-content: center;
     height: 100%;
 
     background-color: #fff;
@@ -257,9 +227,6 @@
     }
     @media only screen and (max-width: 66.125em) {
       padding: 0 5rem;
-    }
-
-    @media only screen and (max-width: 48.5em) {
     }
 
     @media only screen and (max-width: 48em) {
@@ -319,7 +286,6 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: hsl(212, 22%, 12%);
     color: #222d3d;
   }
 
@@ -345,13 +311,12 @@
       background-color: #fbd302;
       filter: opacity(0);
       position: absolute;
-      width: 100%;
+      @include box(10px, 100%);
       padding-right: 0.5rem;
-      height: 10px;
       top: 65%;
+      z-index: 0;
       border-radius: 10px;
       transition: all 0.3s;
-      z-index: 0;
     }
     .underline-red {
       background-color: #ff7965;
@@ -367,8 +332,7 @@
     background-image: url("../images/desktop/image-graphic-design.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
-    width: auto;
+    @include box(60rem, auto);
   }
 
   &__ending-two {
@@ -376,8 +340,7 @@
     background-image: url("../images/desktop/image-photography.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
-    width: auto;
+    @include box(60rem, auto);
   }
 
   &__ending__text-box {
@@ -410,22 +373,12 @@
   height: auto;
 }
 
-.test {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
 /**************************/
 /* SECTION- TESTIMONIALS */
 /**************************/
 
 .section-testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-center-both-column;
   padding: 15rem 8rem;
   background-color: #fff;
 
@@ -467,9 +420,8 @@
 }
 
 .client {
-  display: flex;
+  @include flex-center-align;
   flex-direction: column;
-  align-items: center;
   padding: 0 4rem;
 
   @media only screen and (max-width: 66.125em) {
@@ -539,9 +491,7 @@
 /**************************/
 
 .footer-default {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-both;
 
   font-size: 1.4rem;
   padding: 3rem 0 3rem;
@@ -549,10 +499,7 @@
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-both-column;
   font-size: 1.4rem;
   background-color: #90d4c5;
 
@@ -561,14 +508,14 @@
   }
 
   &__logo-img {
-    height: 35px;
+    height: 3.5rem;
     filter: invert(36%) sepia(22%) saturate(1153%) hue-rotate(118deg)
       brightness(55%) contrast(81%);
   }
 
   &__nav {
-    list-style: none;
     display: flex;
+    list-style: none;
     flex-direction: row;
     gap: 6rem;
     padding-bottom: 8rem;
@@ -576,15 +523,14 @@
   }
 
   &__social-links-row {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 2.4rem;
     padding-bottom: 7rem;
   }
 
   &__social-icon {
-    height: 2.5rem;
-    width: 2.5rem;
+    @include box(2.5rem, 2.5rem);
   }
 
   &__link:link,
