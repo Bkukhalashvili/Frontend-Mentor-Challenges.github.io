@@ -49,9 +49,7 @@
 }
 
 .section-challenge {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-both;
 }
 
 .nft-card {
@@ -61,37 +59,33 @@
   width: 35rem;
 
   &__image-container {
+    @include box(30rem, auto);
     background-image: url(../images/image-equilibrium.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 1rem;
     overflow: hidden;
-    height: 30rem;
-    width: auto;
     margin: 3rem 3rem 2rem 3rem;
+    cursor: pointer;
 
     &__gradient {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      @include flex-center-both;
+      @include box(100%, 100%);
       position: relative;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 100%;
+
       background-image: linear-gradient(
         rgba($color-hover-cyan, 0.7),
         rgba($color-hover-cyan, 0.7)
       );
-      opacity: 0;
-      visibility: hidden;
+      @include fade(hide);
+
       transition: all 0.3s;
     }
 
     &:hover &__gradient {
-      opacity: 1;
-      visibility: visible;
+      @include fade(show);
 
       // disables hover effects on touch screen and enable them for click
       @media only screen and (max-width: 48em), only screen and (hover: none) {
@@ -101,29 +95,24 @@
     }
     // and enable them for click
     &:active &__gradient {
-      opacity: 1;
-      visibility: visible;
+      @include fade(show);
     }
 
     &__view {
-      opacity: 0;
-      visibility: hidden;
+      @include fade(hide);
     }
 
     &:hover &__view {
-      opacity: 1;
-      visibility: visible;
+      @include fade(show);
 
       // disables hover effects on touch screen
       @media only screen and (max-width: 48em), only screen and (hover: none) {
-        opacity: 0;
-        visibility: hidden;
+        @include fade(hide);
       }
     }
     // and enable them for click
     &:active &__view {
-      opacity: 1;
-      visibility: visible;
+      @include fade(show);
     }
   }
 
@@ -167,8 +156,7 @@
       border-bottom: 0.5px solid $color-line-Very-dark-blue;
 
       &__left-container {
-        display: flex;
-        align-items: center;
+        @include flex-center-align;
         font-weight: 600;
         font-size: 1.4rem;
 
@@ -178,16 +166,15 @@
       }
 
       &__right-container {
-        display: flex;
-        align-items: center;
+        @include flex-center-align;
+
         font-weight: 300;
         font-size: 1.4rem;
       }
     }
 
     &__author {
-      display: flex;
-      align-items: center;
+      @include flex-center-align;
       padding: 1.5rem 0 2rem 0;
 
       &__image {
@@ -233,9 +220,7 @@
 /**************************/
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center-both;
   font-size: 1.4rem;
   padding: 3rem 0 3rem;
 }
