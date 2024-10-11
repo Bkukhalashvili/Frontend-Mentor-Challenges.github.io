@@ -7,6 +7,7 @@
 
 .header {
   padding: 1.5rem 0 1.5rem 2rem;
+  margin: 1px;
 
   &__return-link {
     &,
@@ -145,11 +146,11 @@
 
       &__container {
         display: flex;
+        justify-content: space-between;
         padding: 1.5rem;
         background-color: $color-pale-blue;
         border-radius: 1rem;
         margin-bottom: 1.5rem;
-        justify-content: space-between;
         font-weight: 600;
         font-size: $default-font-size;
 
