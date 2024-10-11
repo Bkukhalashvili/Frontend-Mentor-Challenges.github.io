@@ -3,8 +3,6 @@
 /**************************/
 
 .header {
-  // display: inline-block;
-  // max-width: 32.5rem;
   min-width: 23.1rem;
   align-self: start;
   position: sticky;
@@ -20,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // text-align: center;
   }
 
   &__logo {
@@ -55,6 +52,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+
     @media only screen and (max-width: 62.5em) {
       position: relative;
       width: 3rem;
@@ -114,8 +112,6 @@
 }
 
 .navigation {
-  // transition: all 1s ease-out;
-
   &__text-box {
     margin-bottom: 2rem;
 
@@ -148,7 +144,6 @@
   &__list {
     list-style: none;
     text-transform: uppercase;
-    // font-size: 1.4rem;
     letter-spacing: 0.5px;
   }
 
@@ -162,10 +157,8 @@
     &::before {
       content: "";
       position: absolute;
-      // border: 1px solid black;
       height: 19px;
       width: calc(100% + 0.8rem);
-      // color: black;
       background-color: transparent;
       border-radius: 100px;
       border: 1px solid #cac5bb;
@@ -185,10 +178,6 @@
 
     &:hover,
     &:active {
-      // color: crimson;
-      // border: 1px solid black;
-      // // box-shadow: 5px 5px black;
-
       &::before {
         opacity: 1;
         transition: all 0.2s;
@@ -200,7 +189,6 @@
       display: inline-block;
       font-size: 1.2rem;
       margin-right: 0.5rem;
-      // align-items: center;
 
       @media only screen and (max-width: 44.3em) {
         font-size: 1.4rem;
@@ -226,13 +214,11 @@
   @media only screen and (max-width: 62.5em) {
     margin-bottom: 2.7rem;
     font-size: 1.8rem;
-
     position: absolute;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
     transform: translateX(-1000px);
-
     transition: all 0.3s ease-in;
   }
 
@@ -250,10 +236,8 @@
   &::before {
     content: "";
     position: absolute;
-    // border: 1px solid black;
     height: 19px;
     width: calc(100% + 0.8rem);
-    // color: black;
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid #cac5bb;
@@ -379,10 +363,6 @@
       text-decoration: none;
       color: inherit;
     }
-
-    // &:hover,
-    // &:active {
-    // }
   }
 
   &:hover {
@@ -434,8 +414,6 @@
     &__difficulty {
       display: flex;
       align-items: center;
-      // padding-top: 1rem;
-      // font-size: 1.6rem;
       margin-bottom: 1.5rem;
       letter-spacing: 0.8px;
 
@@ -480,9 +458,6 @@
         }
 
         &--num {
-          // border: 1px solid #6abecd;
-          // background-color: #6abecd;
-
           font-weight: 700;
           color: white;
           padding: 0 0.75rem;
@@ -502,13 +477,9 @@
           padding: 0 0.75rem;
           text-transform: uppercase;
           font-weight: 700;
-          // color: #6abecd;
-
           &--newbie {
             color: #6abecd;
-            // color: black;
           }
-
           &--junior {
             color: #aad742;
           }
@@ -545,7 +516,6 @@
   &--soon {
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    // background-color: rgba(24, 24, 24);
     background-color: rgb(27, 25, 27);
 
     &:hover,
@@ -568,17 +538,12 @@
   justify-content: center;
   align-self: end;
   font-size: 1.4rem;
-
   padding: 3.2rem 0 3.2rem;
 
   transition: all 0.3s ease-in;
 
   @media only screen and (max-width: 62.5em) {
-    // grid-template-columns: repeat(1, 1fr);
-    // column-gap: 0;
-
     grid-column: 1;
-
     &--slide-down {
       transform: translateY(203.1px);
     }
