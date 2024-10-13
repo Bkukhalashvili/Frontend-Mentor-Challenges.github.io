@@ -1,38 +1,3 @@
-// const all = {
-//   newbie: [
-//     {
-//       difficulty: "newbie",
-//       title: "title test",
-//       technology: ["html", "css"],
-//       description: "description test",
-//       image: "/img/test.jpg",
-//     },
-//     {
-//       difficulty: "newbie",
-//       title: "title test1",
-//       technology: ["html1", "css1"],
-//       description: "description test1",
-//       image: "/img/test1.jpg",
-//     },
-//   ],
-//   junior: [
-//     {
-//       difficulty: "junior",
-//       title: "title test",
-//       technology: ["html", "css"],
-//       description: "description test",
-//       image: "/img/test.jpg",
-//     },
-//     {
-//       difficulty: "junior",
-//       title: "title test1",
-//       technology: ["html1", "css1"],
-//       description: "description test1",
-//       image: "/img/test1.jpg",
-//     },
-//   ],
-// };
-
 const info = [
   {
     link: "/challenges/01_nft-preview-card/01_index.html",

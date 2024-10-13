@@ -1,5 +1,3 @@
-// import { info } from "./data.js";
-
 async function displayData(info, location) {
   // await locationHandler();
   let cardsEl = document.querySelector(".cards");
