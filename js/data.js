@@ -1,7 +1,7 @@
 const info = [
   {
-    link: "/challenges/01_nft-preview-card/01_index.html",
-    image: "/challenges/01_nft-preview-card/design/desktop-preview.jpg",
+    link: "challenges/01_nft-preview-card/01_index.html",
+    image: "challenges/01_nft-preview-card/design/desktop-preview.jpg",
     title: "NFT preview card component",
     technology: ["html5", "css3"],
     difficultyNum: 1,
@@ -10,9 +10,8 @@ const info = [
       "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
   },
   {
-    link: "/challenges/02_results-summary-component/02_index.html",
-    image:
-      "/challenges/02_results-summary-component/design/desktop-preview.jpg",
+    link: "challenges/02_results-summary-component/02_index.html",
+    image: "challenges/02_results-summary-component/design/desktop-preview.jpg",
     title: "Results summary component",
     technology: ["html5", "css3", "javascript"],
     difficultyNum: 1,
@@ -21,9 +20,9 @@ const info = [
       "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
   },
   {
-    link: "/challenges/03_sunnyside-agency-landing-page/03_index.html",
+    link: "challenges/03_sunnyside-agency-landing-page/03_index.html",
     image:
-      "/challenges/03_sunnyside-agency-landing-page/design/desktop-preview.jpg",
+      "challenges/03_sunnyside-agency-landing-page/design/desktop-preview.jpg",
     title: "Sunnyside agency landing page",
     technology: ["html5", "css3", "javascript"],
     difficultyNum: 2,

@@ -4,7 +4,7 @@ import { displayData } from "./dynHTML.js";
 // creates an object that maps the url to the template, title, and description
 const routes = {
   404: {
-    template: "/templates/404.html",
+    template: "templates/404.html",
     title: "404",
     description: "Error page",
   },
