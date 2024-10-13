@@ -14,32 +14,32 @@ const routes = {
     description: "Frontend Mentor Challenges",
   },
   all: {
-    template: "/templates/all.html",
+    template: "templates/all.html",
     title: "Frontend Mentor Challenges",
     description: "Frontend Mentor Challenges",
   },
   newbie: {
-    template: "/templates/newbie.html",
+    template: "templates/newbie.html",
     title: `FEMC — Newbie`,
     description: "Frontend Mentor Challenges",
   },
   junior: {
-    template: "/templates/junior.html",
+    template: "templates/junior.html",
     title: "FEMC — Junior",
     description: "Frontend Mentor Challenges",
   },
   intermediate: {
-    template: "/templates/intermediate.html",
+    template: "templates/intermediate.html",
     title: "FEMC — Intermediate",
     description: "Frontend Mentor Challenges",
   },
   advanced: {
-    template: "/templates/advanced.html",
+    template: "templates/advanced.html",
     title: "FEMC — Advanced",
     description: "Frontend Mentor Challenges",
   },
   guru: {
-    template: "/templates/guru.html",
+    template: "templates/guru.html",
     title: "FEMC — Guru",
     description: "Frontend Mentor Challenges",
   },
