@@ -9,7 +9,7 @@ const routes = {
     description: "Error page",
   },
   "/": {
-    template: "/templates/all.html",
+    template: "templates/all.html",
     title: "Frontend Mentor Challenges",
     description: "Frontend Mentor Challenges",
   },
