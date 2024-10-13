@@ -45,6 +45,7 @@
 
   &__btn-mobile {
     @include fade(hide);
+    touch-action: manipulation;
 
     @media only screen and (max-width: 62.5em) {
       @include flex-center-align;
@@ -315,6 +316,7 @@
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(24, 24, 24);
+  touch-action: manipulation;
 
   transition: all 0.2s;
 
