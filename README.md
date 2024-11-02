@@ -3,7 +3,7 @@
 This project is a single-page application (SPA) where I display my completed Frontend Mentor challenges in one place.
 
 # Accessing the Website
-You can visit the live website [here](#).
+You can visit the live website [here](https://bkukhalashvili.github.io/Frontend-Mentor-Challenges.github.io/).
 
 # Features
 
